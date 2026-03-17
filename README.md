@@ -11,13 +11,18 @@ Physical Design: Innovus
 ## Mandatory Inputs for PD: 
 
 1. Gate Level Netlist [Output of Synthesis]
+   <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/d65ddd1a-c3fe-4720-bdc0-6aea5dc048cd" />
+
    
-2. Block Level SDC [Output of Synthesis]
-   
-3. Liberty Files (.lib)
-   
-4. LEF Files (Layer Exchange Format)
-   
+3. Block Level SDC [Output of Synthesis]
+   <img width="1919" height="1075" alt="image" src="https://github.com/user-attachments/assets/8f087678-a4d8-467d-8800-d54225bb9ad3" />
+
+4. Liberty Files (.lib)
+   <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/d0948a72-719f-44a1-881e-ad7bf158ace2" />
+
+5. LEF Files (Layer Exchange Format)
+   <img width="1919" height="1012" alt="Screenshot 2026-03-13 083211" src="https://github.com/user-attachments/assets/26a66a6d-ca12-4015-b720-0904f831dc7d" />
+
 ## Procedural Steps:
 
 Ensure the Synthesis for the target design is complete, and then open a terminal from the corresponding workspace. 
@@ -70,26 +75,32 @@ Adding Liberty Files (slow.lib, fast.lib) under “Library Sets
 • add slow.lib with a label Slow or any identifier of your own.
 
 ### Fig.1 Add slow Library set
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/58e28733-2b00-40bb-930a-9c7e6b8f3bdf" />
 
 • add fast.lib with a label Fast or any identifier of your own.
 
 ### Fig.2 Add fast Library set
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/7ee41f38-77fc-4468-b91f-8ecec9905ce9" />
 
 • Adding RC Corners can also be done in a similar process. The temperature value can be found under the corresponding liberty file. Also, cap table and RC Tech files can be added from Foundry where available.
 
 ### Fig.3 Add RC corner
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/d53b53c6-11b9-4bf4-8703-baf27f7fdd0b" />
 
 • Delay Corners are formed by combining Library Sets with RC Corners.
 
 ### Fig.4 Add Delay corner Max_delay & Min_delay
+<img width="1919" height="1078" alt="Screenshot 2026-03-13 090223" src="https://github.com/user-attachments/assets/8a792829-9c2a-4f72-afef-5dc49ab71c2a" />
 
 • Similarly, SDC can be read under the MMMC Object of “Constraints”.
 
 ### Fig.5 SDC Constraint file
+<img width="1919" height="1075" alt="image" src="https://github.com/user-attachments/assets/f92d01a1-f477-4ad6-bd48-8ac2740eaf55" />
 
 • Analysis Views are formed from combinations of SDC and Delay Corner.
 
 ### Fig.6 Add Analysis View Worstcase & Bestcase
+<img width="1693" height="1079" alt="Screenshot 2026-03-13 090731" src="https://github.com/user-attachments/assets/38a5da25-aee1-4acc-80cf-234ce946fc27" />
 
 • Once “Best” and “Worst” Analysis views are created, assign them to Setup and Hold.
 
@@ -108,6 +119,7 @@ In the Import Design window click the save option to save the Default.globals fi
 • A rectangular or square box appears in your GUI if and only if all the inputs are read properly.
 
 ### Fig.8 Core area
+<img width="1913" height="1051" alt="image" src="https://github.com/user-attachments/assets/552e3f9f-21b3-40fa-bddc-34ed608b340e" />
 
 • The internal area of the box is called “Core Area”. 
 
