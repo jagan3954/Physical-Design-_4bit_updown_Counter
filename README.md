@@ -182,6 +182,7 @@ Under Connect Global Net Connects, we create two pins, one for VDD and one for V
 • To perform Special Route, Select Route → Special Route → Add Nets → OK. 
 
 • After the Special Route is complete, all the Standard Cell Rows turn to the Color coded for Metal 1 
+<img width="1919" height="1079" alt="Untitled design" src="https://github.com/user-attachments/assets/c1205f83-ccc4-4954-812b-0c98bdbc1f1b" />
 
 ### Fig.10 Power plan 
 
@@ -194,8 +195,10 @@ The complete Power Planning process makes sure Every Standard Cell receives enou
 2. Select Place → Place Standard Cell → Run Full Placement → Mode → Enable ‘Place I/O Pins’ → OK → OK .
    
 • All the Standard Cells and Pins are placed as per the communication between them, i.e., Two communicating Cells are placed as close as possible so that shorter Net lengths can be used for connections as Shorter Net Lengths enable Better Timing Results.
+<img width="1919" height="1079" alt="Untitled design (1)" src="https://github.com/user-attachments/assets/49ded599-cf9f-488d-9c0d-8e257622526e" />
 
 ### Fig.11 Placement of standard Cells 
+<img width="1919" height="1079" alt="Untitled design (2)" src="https://github.com/user-attachments/assets/6c1af0db-49ac-4216-ab06-ca4293de0d50" />
 
 • You can toggle the Layer Visibility from the list on the Right. The List of Layers available are shown on the right under “Layer” tab with colour coding.
 
